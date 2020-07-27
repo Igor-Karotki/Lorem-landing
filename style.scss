@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+$colors:(buttons: #6a95f7, text-black_header: #090909, text-black:#080808, text-white:#ffffff,
+ background-color:#ebebeb, search_grid-color:#ffc71d99, footer:#221f20);
+
+@function color($color-name) {
+ @return map-get($colors, $color-name)
+}
+
+$mobile:450px;
+
+@mixin mobile {
+ @media(max-width: #{$mobile}) {
+  @content;
+ }
+}
+
+* {
+ box-sizing: border-box;
+ font-family: 'Montserrat', sans-serif;
+}
+
+input {
+ outline: none;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+body,
+html {
+ width: 100%;
+ height: 100%;
+ margin: 0;
+}
+
+h3,
+p {
+ margin: 0;
+}
+
+header,
+main article {
+ max-width: 1423px;
+}
+
+header {
+ position: absolute;
+ right: 0;
+ left: 0;
+ display: flex;
+ margin: 35px auto 0;
+
+ //transition: all 1s cubic-bezier(.165,.84,.44,1);
+ a {
+  color: #ffffff;
+  white-space: nowrap;
+ }
+
+ .logo {
+  flex: 1;
+
+  a {
+   display: flex;
+   align-items: center;
+   padding: 1rem 2rem;
+   width: 250px;
+   height: 103px;
+  }
+ }
+
+ .header-middle-area {
+  display: flex;
+
+  .main-nav {
+   ul {
+    display: flex;
+    height: 35px;
+    border-right: 1px solid #fff;
+
+    li {
+     margin-right: 35px;
+     display: flex;
+
+     a {
+      margin: auto;
+     }
+    }
+   }
+  }
+
+ }
+
+ .login_reg {
+  display: flex;
+  height: 35px;
+
+  a {
+   margin: auto 0 auto 34px;
+  }
+ }
+}
+
+.section_top {
+ height: 880px;
+ background: rgb(47, 35, 173);
+ background: linear-gradient(115deg, rgba(47, 35, 173, 1) 0%, rgba(207, 70, 156, 1) 100%);
+
+ &:after {
+  z-index: 2222222222222;
+  height: 190px;
+  background-color: #ffc000;
+  -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+  border-radius: 50% 50% 50% 50% / 50% 50% 0 0;
+ }
+
+ article {
+  padding-top: 138px;
+  display: flex;
+  margin: auto;
+
+  .content {
+   * {
+    color: #fff
+   }
+
+   max-width: 680px;
+   margin:160px 8% 0 5%;
+
+   h1 {
+    font-size: 50px;
+    margin: 0 0 25px;
+   }
+
+   p {
+    font-size: 16px;
+   }
+
+   .buttons {
+    margin-top: 40px;
+
+    .btn-about {
+     width: 180px;
+     height: 40px;
+     border-radius: 5px;
+     background-color: #ffffff;
+     color: #ee8c19;
+     font-size: 15px;
+     border: 0;
+     margin-right: 30px;
+    }
+
+    .btn-download {
+     width: 180px;
+     height: 40px;
+     border-radius: 5px;
+     border: 1px solid #ffffff;
+     font-size: 15px;
+     background-color: transparent;
+    }
+
+    * {
+     cursor: pointer;
+     font-weight: 500;
+    }
+   }
+  }
+
+  .img {
+   img {
+    max-width: 530px;
+    max-height: 886px;
+   }
+  }
+ }
+}
+
+.section_guide {
+ 
+}
+
+.product-cost{
+
+}
