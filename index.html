@@ -11,10 +11,57 @@
 </head>
 
 <body>
+  <div id="register">
+    <form id="register-block">
+      <a href="#" class="close"></a>
+      <div class="form-container">
+        <h1>Rejestracja</h1>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Adres e-mail" name="email" required>
+
+        <label for="psw"><b>Hasło</b></label>
+        <input type="password" placeholder="Hasło" name="psw" required>
+
+        <label for="psw-repeat"><b>Powtórz hasło</b></label>
+        <input type="password" placeholder="Powtórz hasło" name="psw-repeat" required>
+        <hr>
+        <p>Zakładając konto, zgadzasz się na nasze <a href="#">Regulaminy</a>.</p>
+
+        <button type="submit" class="registerbtn">Zarejestruj się</button>
+      </div>
+
+      <div class="signin-reg">
+        <p>Masz konto? <a href="#login">Zaloguj się</a>.</p>
+      </div>
+    </form>
+  </div>
+  <div id="login">
+    <form id="login-block" action="/action_page.php">
+      <a href="#" class="close"></a>
+      <div class="form-container">
+        <h1>Zaloguj się</h1>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Adres e-mail" name="email" required>
+
+        <label for="psw"><b>Hasło</b></label>
+        <input type="password" placeholder="Hasło" name="psw" required>
+        <hr>
+        <button type="submit" class="registerbtn">Zaloguj się</button>
+      </div>
+
+      <div class="signin-reg">
+        <p>Nie masz jeszcze konta? <a href="#register">Zarejestruj się</a>.</p>
+      </div>
+    </form>
+  </div>
   <header>
     <div class="logo">
       <a href="">
-        <img src="/img/logo.png" alt="lorem.pl">
+        <img src="img/logo.png" alt="lorem.pl">
       </a>
     </div>
     <div class="header-middle-area">
