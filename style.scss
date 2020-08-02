@@ -189,7 +189,6 @@ header {
 }
 
 .section_top {
- background: rgb(47, 35, 173);
  background: linear-gradient(115deg, rgba(47, 35, 173, 1) 0%, rgba(207, 70, 156, 1) 100%);
 
  article {
@@ -252,10 +251,7 @@ header {
      border: 1px solid color(text-white);
      font-size: 15px;
      background-color: transparent;
-
-     @include laptop {
-      margin-top: 10px;
-     }
+     margin-top: 10px;
     }
 
     * {

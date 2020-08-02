@@ -188,7 +188,6 @@ header .login_reg a {
 }
 
 .section_top {
-  background: #2f23ad;
   background: linear-gradient(115deg, #2f23ad 0%, #cf469c 100%);
 }
 
@@ -263,12 +262,7 @@ header .login_reg a {
   border: 1px solid #ffffff;
   font-size: 15px;
   background-color: transparent;
-}
-
-@media (max-width: 1024px) {
-  .section_top article .content .buttons .btn-download {
-    margin-top: 10px;
-  }
+  margin-top: 10px;
 }
 
 .section_top article .content .buttons * {
